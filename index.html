@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <h1 class="logo">PhotoStudio</h1>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="overlay"></div>
+      <div class="home-content">
+        <div class="home-text">
+          <h2>Welcome to Our Photo Studio</h2>
+          <p>Capturing Moments, Creating Memories</p>
+          <button onclick="scrollToSection('gallery')">View Gallery</button>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="studio_section">
+      <div class="studio_container">
+        <div class="studio_images">
+          <div class="studio_img studio_img1">
+            <img src="img/a-1.jpg" alt="Camera 1" />
+          </div>
+          <div class="studio_img studio_img2">
+            <img src="img/a-2.jpg" alt="Camera 2" />
+          </div>
+        </div>
+        <div class="studio_details">
+          <h2>About Our Studio</h2>
+          <p>
+            There are many variations of passages of Lorem Ipsum. There are many
+            variations of passages of Lorem Ipsum.
+          </p>
+          <a href="#" class="read_more_button">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="showcase_section" id="gallery">
+      <div class="container_wrapper">
+        <div class="title_container">
+          <h2>Our Portfolio</h2>
+          <p>There are many variations of</p>
+        </div>
+      </div>
+      <div class="gallery_wrapper">
+        <div class="gallery_item">
+          <img src="img/p-1.jpg" alt="Portfolio Image 1" />
+          <div class="hover_overlay">
+            <a href="">
+              <img src="img/link.png" alt="Link Icon" />
+            </a>
+            <h6>There are many</h6>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="img/p-2.jpg" alt="Portfolio Image 2" />
+          <div class="hover_overlay">
+            <a href="">
+              <img src="img/link.png" alt="Link Icon" />
+            </a>
+            <h6>There are many</h6>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="img/p-1.jpg" alt="Portfolio Image 3" />
+          <div class="hover_overlay">
+            <a href="">
+              <img src="img/link.png" alt="Link Icon" />
+            </a>
+            <h6>There are many</h6>
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="img/p-4.jpg" alt="Portfolio Image 4" />
+          <div class="hover_overlay">
+            <a href="">
+              <img src="img/link.png" alt="Link Icon" />
+            </a>
+            <h6>There are many</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section -->
+    <section class="services" id="service">
+      <div class="container">
+        <div class="text-center service-header">
+          <p class="text-primary text-uppercase">Our Services</p>
+          <h1>We Provide Best Professional Services</h1>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-image">
+              <img src="./img/service-1.jpg" alt="Weddings" />
+              <div class="service-overlay">
+                <a href="#"><img src="img/link.png" alt="" /></a>
+              </div>
+            </div>
+            <h4>Weddings</h4>
+          </div>
+
+          <div class="service-item lowered">
+            <div class="service-image">
+              <img src="./img/service-2.jpg" alt="Portraits" />
+              <div class="service-overlay">
+                <a href="#"><img src="img/link.png" alt="" /></a>
+              </div>
+            </div>
+            <h4>Portraits</h4>
+          </div>
+
+          <div class="service-item">
+            <div class="service-image">
+              <img src="./img/service-3.jpg" alt="Fashion" />
+              <div class="service-overlay">
+                <a href="#"><img src="img/link.png" alt="" /></a>
+              </div>
+            </div>
+            <h4>Fashion</h4>
+          </div>
+
+          <div class="service-item lowered">
+            <div class="service-image">
+              <img src="./img/service-4.jpg" alt="Editorial" />
+              <div class="service-overlay">
+                <a href="#"><img src="img/link.png" alt="" /></a>
+              </div>
+            </div>
+            <h4>Editorial</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- quality Section -->
+    <section class="quality_section">
+      <div class="quality_container">
+        <h2>
+          Quality <br />
+          your Photo
+        </h2>
+        <div class="quality_detail">
+          <div class="quality_box">
+            <div class="quality_img">
+              <img src="img/q-1.png" alt="Professional Staff" />
+            </div>
+            <div class="quality_text">
+              <h5>Professional Staff</h5>
+              <p>There are many variations of passages</p>
+            </div>
+          </div>
+          <div class="quality_box">
+            <div class="quality_img">
+              <img src="img/q-2.png" alt="Save Money" />
+            </div>
+            <div class="quality_text">
+              <h5>Save Money</h5>
+              <p>There are many variations of passages</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="heading-section text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+              culpa.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="./img/address.png" alt="Address" />
+            </div>
+            <div>
+              <h3>Address</h3>
+              <p>230 Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img src="./img/call.png" alt="Phone" />
+            </div>
+            <div>
+              <h3>Contact Number</h3>
+              <p><a href="tel://1234567920">7695869856</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img src="./img/mail.png" alt="Email" />
+            </div>
+            <div>
+              <h3>Email Address</h3>
+              <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-section">
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Message"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn-submit" />
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-map">
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.111261515565!2d144.96307991568526!3d-37.8162799797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57776e7f0b2e3a6!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614214905073!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial -->
+    <section class="testimonial">
+      <div class="testimonial-section">
+        <p>Client's Review</p>
+        <h1>More Than 20000+ Customers Trusted Us</h1>
+
+        <div class="testimonial-carousel owl-carousel">
+          <div class="testimonial-item">
+            <div class="profile">
+              <img src="img/testimonial-1.jpg" alt="Client 1" />
+              <div>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quasi alias earum ullam dicta, totam nesciunt provident labore
+              fugit a?
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <div class="profile">
+              <img src="./img/testimonial-2.jpg" alt="Client 2" />
+              <div>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Repudiandae, facere reprehenderit? Doloremque aliquam distinctio
+              eius blanditiis quam. Similique, soluta numquam!
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <div class="profile">
+              <img src="./img/testimonial-3.jpg" alt="Client 3" />
+              <div>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              error similique, excepturi aut sequi alias consequatur sed fugiat
+              voluptatem est.
+            </p>
+          </div>
+          <div class="testimonial-item">
+            <div class="profile">
+              <img src="./img/testimonial-4.jpg" alt="Client 4" />
+              <div>
+                <h5>Client Name</h5>
+                <span>Profession</span>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              cupiditate unde veritatis qui, dignissimos aut aspernatur?
+              Laudantium illo mollitia ratione?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="footer-column">
+        <a href="index.html" class="navbar-brand">
+          <h1>PhotoStudio</h1>
+        </a>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, aut
+          eligendi cupiditate temporibus ab iusto, et quos itaque tempore
+          repellendus officiis ratione quae totam perferendis voluptatibus,
+          corrupti perspiciatis quo necessitatibus.
+        </p>
+        <p><i class="fa fa-map-marker-alt me-2"></i>pune , India</p>
+        <p><i class="fa fa-phone-alt me-2"></i>9864357878</p>
+        <p><i class="fa fa-envelope me-2"></i>info@example.com</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-column">
+        <h4>Popular Links</h4>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="footer-column newsletter">
+        <h4>Newsletter</h4>
+        <div>
+          <input type="text" placeholder="Your Email Address" />
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="footer-bottom">
+      <p>&copy; <a href="#">PhotoStudio</a>. All Rights Reserved.</p>
+      <p>
+        Designed by <a href="https://google.com">Ishita</a> | Distributed by
+        <a href="https://google.com" target="_blank">DEmpire</a>
+      </p>
+    </div>
+    <!-- Copyright End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
